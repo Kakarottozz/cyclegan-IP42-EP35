@@ -1,0 +1,24 @@
+name: cyclegan
+channels:
+- pytorch
+- defaults
+- conda-forge
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+
+dependencies:
+- python=3.8
+- pytorch=1.8.1
+- scipy
+- pip
+- pip:
+  - dominate==2.6.0
+  - torchvision==0.9.1
+  - Pillow==8.0.1
+  - numpy==1.19.2
+  - visdom==0.1.8
+  - wandb==0.12.18
+  - -i https://pypi.tuna.tsinghua.edu.cn/simple
